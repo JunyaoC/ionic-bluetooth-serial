@@ -1,0 +1,22 @@
+<div style="display: flex;width: 100%;align-items: center;justify-content: center;">
+	<div style="display: flex;justify-content: center;align-items: center;flex-direction: column;width: 150px;">
+		<h4>X</h4>
+		<span>{{previousPos.x | number : '1.2-2'}}</span>
+	</div>
+	<div id="main">
+		<div id="wrapper">
+			<div id="joystick" [ngStyle]='stickStyle'
+			(mousedown)="handleMouseDown($event)"
+			(touchstart)="handleMouseDown($event)"
+			(mousemove)="handleMouseMove($event)"
+			(touchmove)="handleMouseMove($event)"
+			(mouseup)="handleMouseUp($event)"
+			(touchend)="handleMouseUp($event)"
+			></div>
+		</div>
+	</div>
+	<div style="display: flex;justify-content: center;align-items: center;flex-direction: column;width: 150px;">
+		<h4>Y</h4>
+		<span>{{previousPos.y | number : '1.2-2'}}</span>
+	</div>
+</div>

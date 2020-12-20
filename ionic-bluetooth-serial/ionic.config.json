@@ -1,0 +1,7 @@
+{
+  "name": "ionic-bluetooth-serial",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "angular"
+}
